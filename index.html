@@ -771,7 +771,6 @@ function resize(){
 addEventListener('resize',resize);addEventListener('orientationchange',()=>setTimeout(resize,150));
 resize();syncUI();
 requestAnimationFrame(frame);
-
 /* debug / test hook */
 window.__IJ={S:()=>({state,p,enemies,pb,eb,pickups,camX,score,lives,bossOn,bossDying,EV,parts}),startGame,update,render,mk,dropPickup,spawnBoss,killEnemy,die,eshoot,
   set:(k,v)=>{if(k==='camX')camX=v;if(k==='lives')lives=v;},onEnter,setPause};
